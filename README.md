@@ -23,6 +23,7 @@ Copie o arquivo .env e configure
 -cp env .env
 
 Edite o .env com as credenciais do seu banco PostgreSQL
+
     database.default.hostname = localhost
     database.default.database = taskmanager
     database.default.username = seu_user
