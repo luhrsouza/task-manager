@@ -30,7 +30,7 @@
             </div>
 
             <button type="submit" class="btn btn-success">Salvar</button>
-            <a href="/tasks" class="btn btn-secondary">Cancelar</a>
+            <a href="/" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

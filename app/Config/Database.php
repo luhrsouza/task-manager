@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'postgres',
-        'password'     => 'postgre',
+        'password'     => 'postgres',
         'database'     => 'taskmanager',
         'DBDriver'     => 'Postgre',
         'DBPrefix'     => '',

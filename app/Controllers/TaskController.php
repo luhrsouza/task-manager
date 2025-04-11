@@ -7,11 +7,16 @@ use CodeIgniter\Controller;
 
 class TaskController extends Controller
 {
+
     public function index()
+    {
+        return view('index');
+    }
+    public function list()
 {
     $model = new TaskModel();
     $data['tasks'] = $model->findAll();
-    return view('tasks/index', $data);
+    return view('tasks/list', $data);
 }
 
     public function create()
@@ -63,5 +68,17 @@ class TaskController extends Controller
         $model->delete($id);
         
         return redirect()->to('/tasks');
+    }
+
+    public function show($id)
+    {
+        $model = new TaskModel();
+        $task = $model->find($id);
+
+        if(!$task){
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("Tarefa com o ID $id não encontrada.");
+        }
+
+        return view('tasks/show', ['task' => $task]);
     }
 }
