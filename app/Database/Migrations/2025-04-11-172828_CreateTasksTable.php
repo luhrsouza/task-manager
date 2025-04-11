@@ -16,6 +16,7 @@ class CreateTasksTable extends Migration
             'description' => ['type' => 'TEXT', 'null' => true],
             'status'      => ['type' => 'task_status', 'null' => false, 'default' => 'pendente'],
             'created_at'  => ['type' => 'TIMESTAMP', 'default' => 'CURRENT_TIMESTAMP'],
+            'updated_at'  => ['type' => 'TIMESTAMP', 'null' => true],
         ]);
 
         $this->forge->addKey('id', true);
